@@ -9,8 +9,12 @@ My first upload to the repository is a representation of experience with HTML, C
 
 To compile the SCSS into CSS:
 
-```
+``` bash
 $ npm install -g node-sass
 $ cd CSS
 $ node-sass main.scss>main.css
 ```
+
+* Business and Self improvement
+* Basic web development
+* The unknown, a.k.a the future! 
