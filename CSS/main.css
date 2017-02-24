@@ -1,60 +1,94 @@
+body {
+  color: #2d2d2d; }
+
 .bg-1 {
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
-  background-color: rgba(75, 0, 130, 0.7);
+  background-color: rgba(75, 0, 130, 0.8);
   color: #ffffff; }
 
 .jumb {
-  color: indigo; }
+  color: rgba(75, 0, 130, 0.8); }
+
+.white {
+  color: #ffffff; }
+
+.black {
+  color: #2d2d2d; }
+
+nav li a {
+  color: #ffffff;
+  background-color: #2d2d2d; }
 
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box; }
 
-html {
-  text-align: center; }
-  html body {
-    width: 1000px;
-    display: inline-block;
-    font-family: 'Georgia', Helvetica, sans-serif;
-    font-size: 18px;
-    padding: 0;
-    margin: 0 auto;
-    border: 2px solid black; }
+body {
+  display: inline-block;
+  font-family: 'Georgia', Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 0;
+  margin: 0; }
 
 nav {
-  padding: 20px;
-  margin-bottom: 50px; }
-  nav li {
-    text-indent: 30px; }
-
-p {
-  text-indent: 5px; }
+  padding: 0px 0px 50px 20px; }
 
 ol {
-  list-style-type: none;
-  position: flex;
-  flex-direction: column;
-  flex-wrap: wrap; }
+  list-style: none;
+  padding: 5px;
+  border: 2px solid red;
+  margin-top: 20px; }
+  ol li {
+    text-align: left; }
 
-#oe {
-  float: left;
-  padding: 0;
-  margin: 15px; }
+h1 {
+  text-shadow: 2px 2px 5px red; }
 
-#eq {
-  float: right;
-  padding: 0px 15px 0px 0px;
-  margin: 0px 0px 15px 15px; }
+footer {
+  position: fixed;
+  vertical-align: bottom; }
 
-.left {
-  text-align: left; }
+#wholePage {
+  text-align: center;
+  width: 100vw;
+  padding: 5px;
+  margin: 0px auto; }
+
+#banner {
+  height: 400px;
+  width: 100%;
+  border: 2px solid red;
+  background: url(../images/banner/banner1.jpg) center no-repeat;
+  background-size: cover;
+  animation: bannerFadeInOut 10s ease-in-out infinite; }
+
+@keyframes bannerFadeInOut {
+  0% {
+    background: url(../images/banner/banner1.jpg) center no-repeat;
+    background-size: cover; }
+  50% {
+    background: url(../images/banner/banner2.jpg) center no-repeat;
+    background-size: cover; } }
+
+.margin {
+  padding: 50px 0px; }
+
+@media only screen and (max-width: 780px) {
+  #wholePage {
+    width: 750px;
+    border: 2px solid red; }
+  #banner {
+    height: 300px; }
+  img {
+    width: 70%;
+    height: 70%; } }
 
 @media only screen and (max-width: 580px) {
-  body {
+  #wholePage {
     width: 580px;
-    font-size: 65%;
-    border: none; }
-  nav {
-    padding: 50%;
-    margin: 50% auto; } }
+    border: 2px solid red; }
+  #banner {
+    height: 200px; }
+  img {
+    width: 50%;
+    height: 50%; } }

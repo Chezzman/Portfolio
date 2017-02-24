@@ -1,13 +1,32 @@
 
-$primary: rgb(75,0,130);
+$primary: rgba(75,0,130,0.8);
+$black: rgb(45, 45, 45);
+$white: #ffffff;
 
-
+body{
+  color: $black;
+}
 .bg-1{
   box-shadow: 8px 8px 8px rgba(0,0,0,0.4);
-  background-color: rgba(75,0,130, 0.7);
-  color: #ffffff;
+  background-color: $primary;
+  color: $white;
 }
 
 .jumb{
   color: $primary;
+
+}
+.white{
+  color: $white;
+}
+.black{
+  color: $black;
+}
+nav{
+  li{
+    a{
+      color: $white;
+      background-color: $black;
+    }
+  }
 }

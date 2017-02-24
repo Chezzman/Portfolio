@@ -1,74 +1,106 @@
-$yo : 0;
 
 @import "_color.scss";
-*{
-  padding: 0;
-  margin: 0;
+
+* {
   box-sizing: border-box;
 }
-html{
-  text-align: center;
-
-
 body{
-  width:1000px;
+
   display: inline-block;
   font-family: 'Georgia', Helvetica, sans-serif;
   font-size: 18px;
-
+  line-height: 26px;
   padding: 0;
-  margin:$yo auto;
+  margin: 0;
 
-  border: 2px solid black;
 }
+nav{
+  padding: 0px 0px 50px 20px;
 }
-nav {
-  padding: 20px;
-  margin-bottom: 50px;
+ol{
+  list-style: none;
+  padding:5px;
+  border: 2px solid red;
+  margin-top: 20px;
+
   li{
-    text-indent: 30px;
+    text-align: left;
+
+
   }
 }
-p{
-  text-indent: 5px;
-}
-ol {
-  list-style-type: none;
-  position:flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-#oe{
 
-  float:left;
-  padding: $yo;
-  margin: 15px;
-}
-#eq{
-
-  float: right;
-  padding: 0px 15px 0px 0px;
-  margin: 0px 0px 15px 15px;
-}
-#float{
-
+h1 {
+    text-shadow: 2px 2px 5px red;
 }
 
-.left{
-  text-align: left;
+#wholePage{
+
+  text-align: center;
+  width: 100vw;
+  padding:5px;
+  margin: 0px auto;
 }
 
- @media only screen and (max-width: 580px){
 
-  body{
-    width:580px;
-    font-size:65%;
-    border:none;
+#banner{
+  height: 400px;
+  width:100%;
+  border: 2px solid red;
+  background: url(../images/banner/banner1.jpg) center no-repeat;
+  background-size: cover;
+  animation: bannerFadeInOut 10s ease-in-out infinite;
+
+}
+
+
+@keyframes bannerFadeInOut {
+  0% {
+    background: url(../images/banner/banner1.jpg) center no-repeat;
+    background-size: cover;
+
   }
-  nav{
-    padding:50%;
-    margin:50% auto;
+  50% {
+    background: url(../images/banner/banner2.jpg) center no-repeat;
+    background-size: cover;
 
   }
 
- }
+}
+.margin{
+  padding: 50px 0px;
+}
+
+
+
+  @media only screen and (max-width: 780px){
+    #wholePage{
+
+      width:750px;
+      border: 2px solid red;
+
+    }
+    #banner{
+      height: 300px
+    }
+    img{
+      width:70%;
+      height:70%;
+    }
+   }
+
+  @media only screen and (max-width: 580px){
+    #wholePage{
+
+      width:580px;
+      border: 2px solid red;
+
+    }
+    #banner{
+      height: 200px
+    }
+    img{
+      width:50%;
+      height:50%;
+    }
+  }
