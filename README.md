@@ -17,4 +17,10 @@ $ node-sass main.scss>main.css
 
 * Business and Self improvement
 * Basic web development
-* The unknown, a.k.a the future! 
+* 4 Project mainly based around JS and its frameworks
+
+Forming a website built around my CV and Projects is the first step to a healthy and presentable Portfolio. Through out the 12-14 weeks in Sparta Global this Portfolio will expand and become a strong foundation to which will be the building blocks to a viable candidate as a consultant.
+
+#Coming soon...
+
+JavaScript will be incorporated with in the repository by then end of the week.

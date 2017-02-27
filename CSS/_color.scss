@@ -2,19 +2,24 @@
 $primary: rgba(75,0,130,0.8);
 $black: rgb(45, 45, 45);
 $white: #ffffff;
+$second: rgba(151, 117, 170, .9);
 
 body{
   color: $black;
 }
 .bg-1{
-  box-shadow: 8px 8px 8px rgba(0,0,0,0.4);
+  box-shadow: 3px 3px 8px $second;
   background-color: $primary;
   color: $white;
 }
+#meBack{
+  text-shadow: 4px 4px 8px $second;
+  color: $white;
 
-.jumb{
-  color: $primary;
-
+}
+#jumbBack{
+  text-shadow: 4px 4px 8px $second;
+  color: $white;
 }
 .white{
   color: $white;

@@ -2,12 +2,17 @@ body {
   color: #2d2d2d; }
 
 .bg-1 {
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 8px rgba(151, 117, 170, 0.9);
   background-color: rgba(75, 0, 130, 0.8);
   color: #ffffff; }
 
-.jumb {
-  color: rgba(75, 0, 130, 0.8); }
+#meBack {
+  text-shadow: 4px 4px 8px rgba(151, 117, 170, 0.9);
+  color: #ffffff; }
+
+#jumbBack {
+  text-shadow: 4px 4px 8px rgba(151, 117, 170, 0.9);
+  color: #ffffff; }
 
 .white {
   color: #ffffff; }
@@ -19,67 +24,44 @@ nav li a {
   color: #ffffff;
   background-color: #2d2d2d; }
 
-* {
-  box-sizing: border-box; }
-
-body {
-  display: inline-block;
-  font-family: 'Georgia', Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 26px;
-  padding: 0;
-  margin: 0; }
-
-nav {
-  padding: 0px 0px 50px 20px;
-  width: 100%; }
-  nav ul li {
-    width: 33%; }
-
-aside {
-  float: right;
-  width: 37%;
-  height: auto;
-  margin: 1% 0;
-  padding: 1%; }
-  aside ul {
-    text-align: left; }
-    aside ul li {
-      list-style: none; }
+.bg-1 {
+  border-radius: 10px; }
 
 ol {
   list-style: none;
-  padding: 5px;
-  border: 2px solid red;
-  margin: 1% 0; }
-  ol li {
-    text-align: left; }
+  -webkit-padding-start: 20px;
+  padding-left: 20px; }
 
-h1 {
-  text-shadow: 2px 2px 5px red; }
-
-#wholePage {
-  text-align: center;
+#centerFloat {
   width: 100vw;
-  padding: 5px;
-  margin: 0px auto; }
+  margin: 0 auto; }
 
-.block {
-  display: block; }
+img {
+  display: inline-block;
+  height: 300px;
+  width: 200px;
+  padding: 5px;
+  margin-left: 40%;
+  margin-right: auto; }
 
 #sectionOne {
-  float: left;
-  width: 60%;
-  margin: 1% 0;
-  padding: 1%; }
+  padding-left: 10px;
+  margin-right: 15px; }
 
-#banner {
-  height: 400px;
-  width: 100%;
-  border: 2px solid red;
+#jumbBack {
   background: url(../images/banner/banner1.jpg) center no-repeat;
   background-size: cover;
   animation: bannerFadeInOut 10s ease-in-out infinite; }
+  #jumbBack .jumbotron {
+    background: none;
+    background-color: none; }
+
+#meBack {
+  background: url(../images/banner/banner4.jpg) center no-repeat;
+  background-size: cover; }
+  #meBack .jumbotron {
+    background: none;
+    background-color: none; }
 
 @keyframes bannerFadeInOut {
   0% {
@@ -89,54 +71,10 @@ h1 {
     background: url(../images/banner/banner2.jpg) center no-repeat;
     background-size: cover; } }
 
-.margin {
-  padding: 50px 0px; }
-
 @media only screen and (max-width: 780px) {
-  .container {
-    width: 780px; }
-  div {
-    width: 100vw; }
-  #wholePage {
-    width: 750px;
-    border: 2px solid red; }
-  h1 {
-    font-size: 50px; }
-  h2 {
-    font-size: 90%; }
-  h3 {
-    font-size: 90%; }
-  h4 {
-    font-size: 90%; }
-  body {
-    font-size: 150%; }
-  #banner {
-    height: 300px; }
   img {
-    width: 70%;
-    height: 70%; } }
+    margin-left: 35%; } }
 
 @media only screen and (max-width: 580px) {
-  .col-sm-6 {
-    display: block; }
-  .container {
-    max-width: 100vw; }
-  #wholePage {
-    width: 580px;
-    border: 2px solid red;
-    padding: 5%; }
-  body {
-    font-size: 90%; }
-  h1 {
-    font-size: 45px; }
-  h2 {
-    font-size: 80%; }
-  h3 {
-    font-size: 80%; }
-  h4 {
-    font-size: 80%; }
-  #banner {
-    height: 200px; }
   img {
-    width: 50%;
-    height: 50%; } }
+    margin-left: 30%; } }
