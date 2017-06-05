@@ -1,0 +1,19 @@
+{
+  "name": "n",
+  "version": "1.0.0",
+  "description": "show my tech skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chezzman/Portfolio.git"
+  },
+  "author": "charles van oeffelen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chezzman/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Chezzman/Portfolio#readme"
+}
